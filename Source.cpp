@@ -15,17 +15,17 @@ int main() {
 	setlocale(LC_ALL, "ru");
 	
 	int size;
-	cout << "Ââåäèòå ðàçìåð ìàññèâà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> size;
 	int* array = new int[size];
 
-	cout << "Çàïîëíèòå ìàññèâ ÷åðåç ïðîáåë: ";
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð² Ñ‡ÐµÑ€ÐµÐ· Ð¿Ñ€Ð¾Ð±ÐµÐ»: ";
 	for (int i = 0; i < size; i++)
 		cin >> array[i];
 
 	cout << endl;
 	v_sort(array, size);
-	cout << "Ìàññèâ ïîñëå ñîðòèðîâêè: " << endl;
+	cout << "ÐœÐ°ÑÑÐ¸Ð² Ð¿Ð¾ÑÐ»Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸: " << endl;
 	for (int i = 0; i < size; i++)
 		cout << array[i] << " ";
 
